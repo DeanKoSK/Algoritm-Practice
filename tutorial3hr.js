@@ -197,3 +197,9 @@ const increment = (function() {
     
 console.log(increment(5,2));
 console.log(increment(5));
+
+// 첫번쨰 콘솔로그는 5하고 2 increment
+
+// 두번째 콘솔로그는 5 하나니까 1 increment 
+
+

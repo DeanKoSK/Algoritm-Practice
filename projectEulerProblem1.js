@@ -15,23 +15,31 @@
 
 function multiplesOf3and5(number) {
   //배수 찾는 코드 
+
   // i % 3 == 0 3배수
   // i % 5 == 0 5배수
   //퍼센트를 써라
-  for (let i = 1; i <= number; i++) {
-    //유저가 부른 숫자 까지 돌게하기
-    if (i % 3 == 0) {
+  let zero = 0;
+  for (let i = 1; i > 0; i--) {
+    let addingNumber = "";
+    for (let i = 1; i <= number - 1; i++) {
+      //유저가 부른 숫자 까지 돌게하기
+      if (i % 3 == 0 || i % 5 == 0) {
 
-      console.log(i);
-    
+        //let addingNumber = zero + i;
+        addingNumber = zero += i;
+        //console.log(addingNumber);
+
+
+      }
+      //console.log(i);
     }
-    //console.log(i);
+    console.log(addingNumber);
+    return true;
   }
-
-  return true;
 }
-
-multiplesOf3and5(10);
+// 마지막까지 나왔던 숫자들 다 더하는걸 만들어야되는데
+multiplesOf3and5(19564);
 
   //로직 쓰기 
   //freecodecamp 꼭 읽기
