@@ -21,18 +21,33 @@
 // By considering the terms in the Fibonacci sequence whose values do not exceed n, find the sum of the even-valued terms.
 
 //logic 1:유저가 부른 숫자까지 도는 루프 만들기
+//lpgic 2: 피보나치 만들기
 //logic 2:짝수 숫자들 찾아내는 코드 적기
-//logic 3:피보나치 넘버에 나오는 짝수만 나오게 하기
-//logic 4:피보나치 넘버에 나오는 짝수들 더하게 하기
-
+//logic 3:짝수 숫자들 나오게 하는 코드를 피보나치에 나오는 짝수들로 연결시키기
+//logic 4:
+let zero = 0;
 function fiboEvenSum(n) {
 
+    var result, a, b;
+     a = 0;
+     b = 1;
+     
+    result = b;
+    for (var i = 1; i <= n; i++) {
+        console.log(result);
+        result = a + b;
+        a = b;
+        b = result;
+    }
+    
+
     for (let i = 1; i <= n; i++) {
-        if (i % 2 == 0) {
-           console.log(i)
+        if (result % 2 == 0) {
+            zero += i;
+            // console.log(zero);
         }
     }
-
+// console.log(zero);
     return true;
 }
 fiboEvenSum(10)

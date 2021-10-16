@@ -20,7 +20,9 @@ function daechulCode() {
         
         console.log(a);
     }
-    
+    //
+    //
+    //
     for(let thridI = 0; thridI > -2; thridI-- ){
      let b = " ";
     
@@ -31,6 +33,7 @@ function daechulCode() {
               b = b + " ";
           }
       }
+
       console.log(b);
     }
    

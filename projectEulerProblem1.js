@@ -39,7 +39,7 @@ function multiplesOf3and5(number) {
   }
 }
 // 마지막까지 나왔던 숫자들 다 더하는걸 만들어야되는데
-multiplesOf3and5(19564);
+multiplesOf3and5(10);
 
   //로직 쓰기 
   //freecodecamp 꼭 읽기
