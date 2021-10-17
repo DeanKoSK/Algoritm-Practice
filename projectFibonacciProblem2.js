@@ -22,33 +22,41 @@
 
 //logic 1:유저가 부른 숫자까지 도는 루프 만들기
 //lpgic 2: 피보나치 만들기
-//logic 2:짝수 숫자들 찾아내는 코드 적기
-//logic 3:짝수 숫자들 나오게 하는 코드를 피보나치에 나오는 짝수들로 연결시키기
-//logic 4:
+//logic 3:유저가 10을 입력하면 10 아니면 이하로 나오게 하기
+//logic 4: 짝수를 더하게 하는 코드 만들기
 let zero = 0;
 function fiboEvenSum(n) {
 
     var result, a, b;
-     a = 0;
-     b = 1;
-     
+    a = 0;
+    b = 1;
+
     result = b;
     for (var i = 1; i <= n; i++) {
-        console.log(result);
+
         result = a + b;
         a = b;
         b = result;
-    }
-    
-
-    for (let i = 1; i <= n; i++) {
-        if (result % 2 == 0) {
-            zero += i;
-            // console.log(zero);
+        // console.log(result);
+        if (result <= n) {
+            zero = 0;
+            result += zero;
+            //console.log(result);
+            if (result % 2 == 0) {
+                result += zero;
+                
+                console.log(result);
+            }
+           // console.log(result);
         }
+        //console.log(result);
+        // 여기서 짝수끼리 더하는 코드 만들어야되는데.
+        
     }
-// console.log(zero);
+    //console.log(result);
+
     return true;
+    //왜 리턴을 result로 해도 안될까 
 }
 fiboEvenSum(10)
 
