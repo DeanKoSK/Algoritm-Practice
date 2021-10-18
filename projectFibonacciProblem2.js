@@ -24,13 +24,15 @@
 //lpgic 2: 피보나치 만들기
 //logic 3:유저가 10을 입력하면 10 아니면 이하로 나오게 하기
 //logic 4: 짝수를 더하게 하는 코드 만들기
-let zero = 0;
-function fiboEvenSum(n) {
 
-    var result, a, b;
+function fiboEvenSum(n) {
+    let zero = 0;
+    var result;
+    var a;
+    var b;
     a = 0;
     b = 1;
-
+    let addingNumber = 0;
     result = b;
     for (var i = 1; i <= n; i++) {
 
@@ -38,25 +40,53 @@ function fiboEvenSum(n) {
         a = b;
         b = result;
         // console.log(result);
+
         if (result <= n) {
-            zero = 0;
+            // zero = 0;
             result += zero;
             //console.log(result);
             if (result % 2 == 0) {
-                result += zero;
-                
-                console.log(result);
-            }
-           // console.log(result);
-        }
-        //console.log(result);
-        // 여기서 짝수끼리 더하는 코드 만들어야되는데.
-        
-    }
-    //console.log(result);
 
-    return true;
+                //result += zero;
+                //  addingNumber = 0;
+                addingNumber  += result;
+              
+            }
+            // console.log(addingNumber);
+             
+        }
+      
+        // 여기서 짝수끼리 더하는 코드 만들어야되는데.
+
+    }
+
+
+    return addingNumber;
     //왜 리턴을 result로 해도 안될까 
 }
-fiboEvenSum(10)
+console.log(fiboEvenSum(10));
+
+
+
+//정리된 버전
+
+function fiboEvenSum(n) {
+    var result;
+    var a = 0;
+    var b = 1;
+    let addingNumber = 0;
+    for (var i = 1; i <= n; i++) {
+        result = a + b; // 0 1 = 1
+        a = b;
+        b = result;
+
+        if (result <= n) {
+            if (result % 2 == 0) {
+                addingNumber += result;
+            }
+        }
+    }
+    return addingNumber;
+}
+fiboEvenSum(10);
 

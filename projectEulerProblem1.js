@@ -34,13 +34,13 @@ function multiplesOf3and5(number) {
       }
       //console.log(i);
     }
-    console.log(addingNumber);
-    return true;
+    //console.log(addingNumber);
+    return addingNumber;
   }
 }
 // 마지막까지 나왔던 숫자들 다 더하는걸 만들어야되는데
-multiplesOf3and5(10);
 
+console.log(multiplesOf3and5(49));
   //로직 쓰기 
   //freecodecamp 꼭 읽기
 
