@@ -88,5 +88,5 @@ function fiboEvenSum(n) {
     }
     return addingNumber;
 }
-fiboEvenSum(10);
+console.log(fiboEvenSum(10));
 
