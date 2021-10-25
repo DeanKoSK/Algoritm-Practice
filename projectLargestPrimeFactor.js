@@ -3,31 +3,56 @@
 
 // What is the largest prime factor of the given number?
 
-//logic 1: 프라임 팩터를 나오는 코드를 만들기
-//logic 2: 프라임 팩터들 중에 제일 큰 숫자 나오게 만들기
-//logic 3: 값이 안찾아질떄 primeFactor increment
-//logic 4: 그중에 제일 높은 프라임 팩터를 찾아내기.
+//logic 1: 유저가 부른 숫자까지 도는 루프 
+//logic 2: 프라임팩터를 찾을떄까지 도는 루프
+//logic 3: 프라임팩터들 중에 제일 큰 숫자 찾기 
+//logic 4: 2면 그냥 2가 나오는 코드?
 
+//유저가 넣은 코드가 2일때 자꾸 문제가 일어나는데 그거 알아내기
+//for loop 혹시 모르니까 다시 보기
+//스코프 문제 보기
 
 function largestPrimeFactor(number) {
-    let zero = 0;
+
     let primeFactor = 2;
     for (let i = 0; i <= number; i++) {
-        //유저가 부른 숫자만큼 도는 루프.
-        if (number % primeFactor == 0) {
- 
-        number /= primeFactor;
-            // 여기에다 뭐 넣을지도 알아내야되고 
-            // 여기에서 나오는 숫자중에 제일 큰 숫자를 찾아내는 코드도 만들어야되는데.
+
+
+        if (number % primeFactor === 0 ) {
+
+            number /= primeFactor;
+            
+            
         } else {
             primeFactor++;
-            //안될때마다 나누기 하는 숫자를 늘려주는 코드. 
         }
-
     }
-
+    
     return primeFactor;
 }
+console.log(largestPrimeFactor(2));
+//2일떄 뭐를 하는 if statement를 하면 다른 정답이 이상하게 나온다
+//2가 나오게 만들면 다른 코드에서 문제가 생긴다
+//루프 초반에 무슨 문제가 있는거 같은데 
+//내일도 파이썬 투터 다시 돌려서 보기 
+//2에서만 자꾸 무슨 문제가 생긴다 다른거는 다 괜찮은데  
 
+function largestPrimeFactor(number) {
+
+    let primeFactor = 2;
+    for (let i = 0; i <= number; i++) {
+
+        if (number % primeFactor === 0) {
+
+            number /= primeFactor;
+            if (number === 1) {
+                return primeFactor;
+            }
+
+        } else {
+            primeFactor++;
+        }
+    }
+    return primeFactor;
+}
 console.log(largestPrimeFactor(13195));
-// 13195부터 자꾸 틀리기 시작한다 by 1
