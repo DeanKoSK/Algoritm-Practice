@@ -56,3 +56,45 @@ function largestPrimeFactor(number) {
     return primeFactor;
 }
 console.log(largestPrimeFactor(13195));
+
+function test2(n) {
+    let result = null;
+    for (let i = 2; ; i++) {
+        if (n % i === 0) {
+            n = n / i;
+            result = i;
+            if (n === 1) {
+                return result;
+            }
+        }
+    }
+}
+
+console.log(test2(2));
+
+function test2(n) {
+    let result = null;               //3 4 5 6 7 8 9 
+    for (let i = 2; ; i++) { // 3 5 7 9 
+        // if(n )
+        if (n % i === 0) {
+            n = n / i;
+            if (n % 2 === 0) {
+                for (; ;) {
+                    if (n % 2 === 0) {
+                        n = n / 2;
+                    } else {
+                        break;
+                    }
+                }
+            }
+
+
+            result = i;
+            if (n === 1) {
+                return result;
+            }
+        }
+    }
+}
+
+console.log(test2(8));
