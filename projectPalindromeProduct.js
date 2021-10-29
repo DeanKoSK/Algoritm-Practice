@@ -24,17 +24,32 @@
 //n= 유저가 부른 곱하기 디짓
 //string도 똑같으면 if가 된다 
 // function largestPalindromeProduct(n) {
-let n = 906609;
-//palindrome = n.toString();
-
-
+let n = 2;
+palindrome = n.toString();
 // num = parseInt(palindrome);
-if (n % 2 == 0) {
-  palindrome = n.toString();
-  
-if (n % 1 == 0) {
-  palindrome = n.toString();
+
+
+for (i = 0; i = palindrome.length; i++) { //palindrome.length가 1로 나오는데 이거도 고쳐야된다
+
+  // 유저가 넣은 디짓에서 제일 큰 숫자 찾아내는 코드 만들기.
+
+
+  if (n % 2 == 0) {
+
+
+    // 반대쪽 숫자들 비교하는 코드들 만들기
+
+  }
+  if (n % 1 == 0) {
+
+
+    //가운데 빼고는 다른 숫자들 다 비교하는 코드 찾아내기
+  }
 }
+
+ //console.log(palindrome.length) = 1이 나온다
+
+ //가운데를 찾는 코드 찾기
  //렝스도 쓰고 parseInt() 쓰기 
 
 
