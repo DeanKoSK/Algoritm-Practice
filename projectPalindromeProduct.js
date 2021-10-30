@@ -20,14 +20,16 @@
 // let n = num.toString();
 
 // console.log(n.split(""))
-
+//palindrome 넘버인지 아닌지 코드부터 작성한다
 //n= 유저가 부른 곱하기 디짓
 //string도 똑같으면 if가 된다 
 // function largestPalindromeProduct(n) {
 let n = 2;
 palindrome = n.toString();
 // num = parseInt(palindrome);
-
+// palindrome.length
+// console.log(palindrome.length(1)); 이거 수정하기
+//렝스로 비교하는 방법 콘솔로그 더 찍어서 알아내기 !!!!!!
 
 for (i = 0; i = palindrome.length; i++) { //palindrome.length가 1로 나오는데 이거도 고쳐야된다
 
@@ -36,12 +38,18 @@ for (i = 0; i = palindrome.length; i++) { //palindrome.length가 1로 나오는�
 
   if (n % 2 == 0) {
 
-
+palindrome.length; // 1
+palindrome.length; // -1
+//이거 하면 아무것도 안나온다
     // 반대쪽 숫자들 비교하는 코드들 만들기
 
   }
   if (n % 1 == 0) {
 
+  palindrome.length; //1 
+  palindrome.length;// -1
+  
+  
 
     //가운데 빼고는 다른 숫자들 다 비교하는 코드 찾아내기
   }
