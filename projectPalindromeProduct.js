@@ -20,40 +20,73 @@
 // b= n1[-1] 
 // a == b;
 
-let ab = 234
 
-function largestPalindromeProduct(n) {
-    over = false
-    if (ab % 2 === 0) {
+function largestPalindromeProduct() {
+    let ab = 2442;
+    
+    
+  
+    forlooplength = parseInt(ab.toString.length / 2)
+    console.log(forlooplength)
+    // = 0 should be 2
+   // if (ab.toString().length % 2 === 0) {
 
-        for (i = 0; i <= ab.toString().split(" ");i++) {
-           
-           //
+        let number = ab.toString().split("").length
 
-            let startLength = ab[i]; 
-            let endLength = ab[-1,-i];
+        for (let i = 0; i <= forlooplength; i++) {
 
-            if(startLength == endLength){
-
-              over =true;
-
-            }
+            let front = ab.toString()[i];
+            let back = ab.toString().length -1 -i;
             
 
-            if (startLength !== endLength) {
-                console.log(fail)
-                over = false;
-                console.log(fail)
+            parseInt(front);
+            parseInt(back);
+
+            
+
+            if (front === back) {
+
+                console.log("working");
+
+            }
+            else {
+                console.log("fail");
+                return false;
+
             }
         }
-    }
-    else {
+  //  }
+    // else {
+    //     let number = ab.toString().split("").length
 
-    }
+    //     for (let i = 0; i <= number; i++) {
 
-    return over;
+    //         let front = ab.toString()[i];
+    //         let back = ab.toString()[-1, -i];
+
+    //         parseInt(front);
+    //         parseInt(back);
+
+    //         console.log(front)
+    //         console.log(back)
+
+    //         if (front === back) {
+
+    //             console.log("working");
+
+    //         }
+    //         else {
+
+    //             console.log("fail")
+    //             over = false;
+
+    //         }
+    //     }
+    // }
+
+    return true;
 }
 
-largestPalindromeProduct(3);
+largestPalindromeProduct();
 
 //console.log(ab.toString().split(""));

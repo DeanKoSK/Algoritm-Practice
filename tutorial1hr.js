@@ -209,7 +209,7 @@ var ourArray = [["hello", 42], ["how are you", 77]];
 
 //access array data with indexes
 var ourArray = [50, 60.70];
-var ourData = ourArra[0];
+var ourData = ourArray[0];
 
 //Modify Array Data with Indexes
 
@@ -278,7 +278,7 @@ function fun1() {
 
 function myLocalScope() {
     var myVar = 5;
-    console.log(myvar);
+    console.log(myVar);
 }
 
 myLocalScope();
